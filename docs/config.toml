@@ -2,7 +2,6 @@ baseurl = "https://koyogakuin.github.io/butsuri/"
 title = "Koyo Physics Club"
 canonifyurls = true
 paginate = 10
-theme = "startbootstrap-clean-blog"
 languageCode = "ja-jp"
 copyright = "Code released under the Apache 2.0 license."
 googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
