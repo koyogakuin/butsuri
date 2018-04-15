@@ -12,7 +12,7 @@ disqusShortname = "" #delete or comment to disable Disqus comments
 
 [params]
   DateForm = "Mon, Jan 2, 2018"
-  Description = "ーKoyo Gakuin High School Physics Clubー"
+  Description = "Koyo Gakuin High School Physics Club"
   Author = "T.H. & S.H."
   email = "koyobutsuri@gmail.com"
   postSummariesFrontPage = 3 #Number of post summaries to show on front page, comment out to allow default(4)
