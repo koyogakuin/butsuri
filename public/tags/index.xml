@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Koyo Physics Club</title>
+    <title>Tags on 甲陽学院 高等学校 物理部</title>
     <link>https://koyogakuin.github.io/butsuri/tags/</link>
-    <description>Recent content in Tags on Koyo Physics Club</description>
+    <description>Recent content in Tags on 甲陽学院 高等学校 物理部</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Code released under the Apache 2.0 license.</copyright>
-    <lastBuildDate>Sun, 16 Apr 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Intro</title>
-      <link>https://koyogakuin.github.io/butsuri/tags/intro/</link>
-      <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/tags/intro/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

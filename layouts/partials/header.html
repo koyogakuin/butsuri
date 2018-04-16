@@ -11,7 +11,7 @@
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
 
 
-    <title>{{ .Title }} -- {{ .Site.Title }}</title>
+    <title>{{ .Site.Title }}</title>
 
     {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                <a class="navbar-brand" href="{{ .Site.BaseURL }}">Koyo Physics Club</a>
             </div>
 
             {{ partial "navbar.html" . }}

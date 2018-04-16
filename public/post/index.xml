@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Koyo Physics Club</title>
+    <title>Posts on 甲陽学院 高等学校 物理部</title>
     <link>https://koyogakuin.github.io/butsuri/post/</link>
-    <description>Recent content in Posts on Koyo Physics Club</description>
+    <description>Recent content in Posts on 甲陽学院 高等学校 物理部</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Code released under the Apache 2.0 license.</copyright>
-    <lastBuildDate>Sat, 15 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ホームページ鋭意開発中！</title>
-      <link>https://koyogakuin.github.io/butsuri/post/hacker-with-horn/</link>
-      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
+      <link>https://koyogakuin.github.io/butsuri/post/homepage/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://koyogakuin.github.io/butsuri/post/hacker-with-horn/</guid>
+      <guid>https://koyogakuin.github.io/butsuri/post/homepage/</guid>
       <description>ホームページ鋭意開発中！</description>
     </item>
     
