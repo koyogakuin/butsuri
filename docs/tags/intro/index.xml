@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Koyo Physics Club</title>
-    <link>https://koyogakuin.github.io/butsuri/page/</link>
-    <description>Recent content in Pages on Koyo Physics Club</description>
+    <title>Intro on Koyo Physics Club</title>
+    <link>https://koyogakuin.github.io/butsuri/tags/intro/</link>
+    <description>Recent content in Intro on Koyo Physics Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Code released under the Apache 2.0 license.</copyright>
     <lastBuildDate>Sun, 16 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://koyogakuin.github.io/butsuri/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://koyogakuin.github.io/butsuri/tags/intro/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,24 +25,6 @@
  Y本
  
   </description>
-    </item>
-    
-    <item>
-      <title>その他</title>
-      <link>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</link>
-      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>部誌のバックナンバー</title>
-      <link>https://koyogakuin.github.io/butsuri/page/%E3%83%90%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC/</link>
-      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/page/%E3%83%90%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC/</guid>
-      <description></description>
     </item>
     
   </channel>

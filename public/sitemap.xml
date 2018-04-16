@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</loc>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
     <lastmod>2017-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/post/hacker-with-horn/</loc>
-    <lastmod>2017-04-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</loc>
     <lastmod>2017-04-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,7 +29,13 @@
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/</loc>
-    <lastmod>2017-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://koyogakuin.github.io/butsuri/tags/intro/</loc>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -40,13 +46,13 @@
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/categories/page/</loc>
-    <lastmod>2017-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/page/</loc>
-    <lastmod>2017-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,6 +64,7 @@
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/tags/</loc>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
