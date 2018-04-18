@@ -7,7 +7,11 @@
    position: absolute;
    top: 50px;
    left:0px
+<<<<<<< HEAD
    z-index: 0;
+=======
+   z-index: 5;
+>>>>>>> 27a66631b3c79ce5b0384aa20e15f359443b48ab
    width: 100%;
    height:　50px;
    margin:0 auto;
