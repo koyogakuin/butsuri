@@ -11,14 +11,5 @@
 	<atom:link href="https://koyogakuin.github.io/butsuri/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>紹介</title>
-      <link>https://koyogakuin.github.io/butsuri/categories/%E7%B4%B9%E4%BB%8B/</link>
-      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/categories/%E7%B4%B9%E4%BB%8B/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
