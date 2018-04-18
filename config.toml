@@ -1,5 +1,5 @@
 baseurl = "https://koyogakuin.github.io/butsuri/"
-title = "甲陽学院 高等学校 物理部"
+title = "甲陽学院 高等学校 物理部(新)"
 canonifyurls = true
 paginate = 10
 languageCode = "ja-jp"
@@ -25,10 +25,6 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   title = "github"
   url = "https://github.com/koyogakuin/"
 
-[[menu.main]]
-  name = "ホーム"
-  url = "/"
-  weight = -500
 
 [[menu.main]]
   name = "活動記録"
@@ -49,3 +45,8 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   name = "その他"
   url = "/page/その他/"
   weight = -100
+
+[[menu.main]]
+  name = "学校HP"
+  url = "http://www.koyo.ac.jp/"
+  weight = -99
