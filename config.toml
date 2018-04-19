@@ -25,6 +25,10 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   title = "github"
   url = "https://github.com/koyogakuin/"
 
+[[menu.main]]
+  name = "ホーム"
+  url = "/"
+  weight = -500
 
 [[menu.main]]
   name = "活動記録"
@@ -45,8 +49,3 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   name = "その他"
   url = "/page/その他/"
   weight = -100
-
-[[menu.main]]
-  name = "学校HP"
-  url = "http://www.koyo.ac.jp/"
-  weight = -99
