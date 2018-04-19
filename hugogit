@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cp -r /Users/Mactaku/Documents/物理部ホームページ/butsuri/static/ /Users/Mactaku/Documents/物理部ホームページ/butsuri/docs/
+git add .
+git commit -m "change some parts"
+git push origin master
+
