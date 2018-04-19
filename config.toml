@@ -4,7 +4,7 @@ canonifyurls = true
 paginate = 10
 languageCode = "ja-jp"
 copyright = "Code released under the Apache 2.0 license."
-googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
+googleAnalytics = "UA-117865841-1" # delete or comment to disable Google Analytics JS generation
 disqusShortname = "" #delete or comment to disable Disqus comments
 
 [author]
