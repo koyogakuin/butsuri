@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 甲陽学院 高等学校 物理部(新)</title>
+    <link>https://koyogakuin.github.io/butsuri/page/</link>
+    <description>Recent content in Pages on 甲陽学院 高等学校 物理部(新)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Code released under the Apache 2.0 license.</copyright>
+    
+	<atom:link href="https://koyogakuin.github.io/butsuri/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>その他</title>
+      <link>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</guid>
+      <description>・物理部入部希望の方へ(随時募集中です！)</description>
+    </item>
+    
+    <item>
+      <title>バックナンバー</title>
+      <link>https://koyogakuin.github.io/butsuri/page/%E3%83%90%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/page/%E3%83%90%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC/</guid>
+      <description>●2014年度  ・表紙 ・校内疑似体験 ・ウィルバーフォース振り子 ・テレビ石 ・ギターエフェクターの作成(↓紹介PV) ・モーゼ効果と反磁性 ・ネット社会の安全性について ・ブラックウォールと偏光板 ・機械と話せる日は来るのか ・船、橋、卵 ・マイコンボードとブレッドボードによる小学生でもできる簡単超多機能機械製作 ・あとがき   ●2013年度  ・EAT&amp;BITE ・EAT&amp;BITE(ゲーム本体)をDL ・カオス理論(Chaos theory) ・データ圧縮について ・製作費０円！お手軽分光器 ・水の中の砂時計 ・竜巻発生装置   </description>
+    </item>
+    
+    <item>
+      <title>部員紹介</title>
+      <link>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</guid>
+      <description>●101回生  
+&#39;30年度部長 H﨑
+ このホームページの共同制作者。C言語、iPhoneアプリ開発、電子工作、Arduino、人工知能、自作PC、それからギターにも手を出して、自分でも、もはや何がしたいのか分からなくなっている人。
+ &#39;30年度副部長 S.H.
+ 同じくこのホームページの共同制作者。中学校の時は物理部部長。名字が一文字なだけに一人だけイニシャルになってしまった。Unityとかモデリングとかできるらしい。
+ Y本（Y氏）
+ THE 物理部員。物理部といえばY氏。Y氏といえば物理部。
+  </description>
+    </item>
+    
+  </channel>
+</rss>
