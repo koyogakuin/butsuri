@@ -90,11 +90,11 @@
         <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
              <div class="post-heading">
-               <h1>Hugoでサイト開発入門　第1回</h1>
+               <h1>Hugoでサイト開発入門　第2回</h1>
                <h2 class="subheading"></h2>
                <span class="meta">
                  
-投稿者：  H﨑　　更新日  2018年4月21日
+投稿者：  H﨑　　更新日  2018年4月23日
 <br />
 カテゴリ <a href="https://koyogakuin.github.io/butsuri/categories/web">Web</a>
 
@@ -116,88 +116,38 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   
 
-<p>どーも。物理部部長のH﨑です。
-記念すべき第一回。何を投稿しようか迷ったのですが、後輩が今後もこのサイトを運営できるように（しろよ絶対）ということで、Hugoの使い方を書いていきます。</p>
+<p>どーも。物理部部長のH﨑です。<br />
+さてさて、HugoでWeb開発の第二回です。
+今回はサイトを自分好みに変更する方法を紹介したいと思います。</p>
 
-<p>僕自身Web開発は初めてでしたが、Hugoを使って簡単にカッコいいサイトが作れました！
-HugoとGitHub Pagesを使ってサイトを公開するまでを紹介したいと考えています。</p>
+<h1 id="config-tomlの編集">config.tomlの編集</h1>
 
-<p><img src="https://koyogakuin.github.io/butsuri/img/0421/1.png" alt="Hugo" /></p>
+<p><a href="https://koyogakuin.github.io/butsuri/post/hugo1/">前回</a>、何気にコピペして使用したconfig.tomlですが、ちゃんと意味があります。<br />
+これを編集すれば、一気に自分のサイトっぽくなります。</p>
 
-<h1 id="hugoとは">Hugoとは？</h1>
-
-<p>静的サイトジェネレータといって、初心者でも結構簡単にサイトを作れてしまうソフト。<br />
-正攻法でサイト作ると、HTMLちゃんと書いて、CSS作って、JavaScript、、、そんなん知るかとなるわけですが、そんな面倒な作業を肩代わりしてくれます！</p>
-
-<p>ちなみに公式サイトでもGo言語がどうたらこうたらと書かれてますが、実際はGo言語の存在を意識する必要は全くありません。</p>
-
-<h1 id="インストール">インストール</h1>
-
-<p>僕はMacユーザなので(ﾄﾞﾔ!)、Macでのインストールの方法です。</p>
-
-<pre><code>//homebrewをすでにインストールしている場合は不要
-xcode-select --install
-ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;
-//ここまで
-
-brew update
-brew install hugo
-hugo version
-</code></pre>
-
-<p>Hugoのバージョンが表示されれば完了です。</p>
-
-<h1 id="使ってみよう">使ってみよう！</h1>
-
-<p>作りたい場所のディレクトリに入って、</p>
-
-<pre><code>hugo new site サイト名
-</code></pre>
-
-<p>僕は今回</p>
-
-<pre><code>hugo new site test
-</code></pre>
-
-<p>としています。
-これでサイトの雛形が出来上がりました。</p>
-
-<h3 id="テーマの適応">テーマの適応</h3>
-
-<p>僕はこのテーマを使って、作成しました。
-<a href="https://themes.gohugo.io/startbootstrap-clean-blog/">https://themes.gohugo.io/startbootstrap-clean-blog/</a><br />
-Downloadからzipをダウンロードしましょう！</p>
-
-<p>では、ファイルの移行作業です。<br />
-・archetypes→archetypesに置換<br />
-・imagesそのままコピー<br />
-・layouts→layoutに置換<br />
-・static→static置換</p>
-
-<p>次にconfig.tomlを編集します。<br />
-本家サイトとほぼ同じですが、これをコピーして保存しましょう。<br />
-パラメータは適宜変更して下さい。</p>
-
-<pre><code>baseurl = &quot;http://humboldtux.github.io/&quot;
-title = &quot;Start Bootstrap Clean Blog&quot;
-canonifyurls = true
-paginate = 10
-languageCode = &quot;ja-jp&quot;
-copyright = &quot;Code released under the Apache 2.0 license.&quot;
-googleAnalytics = &quot;&quot;
-disqusShortname = &quot;&quot;
+<pre><code>baseurl = &quot;&quot; #公開する予定のサイトのURL
+title = &quot;HugoWeb&quot; #サイトのタイトル
+canonifyurls = true #絶対パスにする設定
+paginate = 10 #一度に表示する記事の数
+languageCode = &quot;ja-jp&quot; #日本語設定
+copyright = &quot;Code released under the Apache 2.0 license.&quot; #テーマのライセンス表記。そのままにしましょう。
+googleAnalytics = &quot;&quot; #Google Analyticsで追跡できます。
+disqusShortname = &quot;&quot; #DisqusのID(コメント欄)
 
 [author]
-  name = &quot;name&quot;
+  name = &quot;&quot; #サイトの作者
 
 [params]
-  DateForm = &quot;Mon, Jan 2, 2006&quot;
-  Description = &quot;Your site description&quot;
-  Author = &quot;Benoît Benedetti&quot;
-  email = &quot;benoit.benedetti@gmail.com&quot;
-  postSummariesFrontPage = 4
-  showReadTime = true
+  DateForm = &quot;Mon, Jan 2, 2006&quot; #日付の形式設定
+  #DateForm = &quot;2006年1月2日&quot; # こうすれば年月日表示になります。
 
+  Description = &quot;&quot; #サイトの説明
+  Author = &quot;&quot; #デフォルトの著者
+  email = &quot;&quot; #メールアドレス
+  postSummariesFrontPage = 4 #一度に表示する記事の数
+  showReadTime = false #何度読まれたか表示。あんまり使わない気が、、、
+
+# いらないものは消しましょう。
 [[params.social]]
   title = &quot;twitter&quot;
   url = &quot;https://twitter.com/humboldtux&quot;
@@ -208,52 +158,108 @@ disqusShortname = &quot;&quot;
   title = &quot;facebook&quot;
   url = &quot;https://www.facebook.com/FACEBOOKHANDLE&quot;
 
+#これも必要に応じて、増やしたり減らしたりしましょう。
+#weightの値で位置が変わります。
 [[menu.main]]
-  name = &quot;home&quot;
+  name = &quot;ホーム&quot;
   url = &quot;/&quot;
-  weight = -200
+  weight = -300
 [[menu.main]]
-  name = &quot;Archives&quot;
+  name = &quot;活動記録&quot;
   url = &quot;/post/&quot;
-  weight = -180
+  weight = -280
+[[menu.main]]
+  name = &quot;その他&quot;
+  url = &quot;/&quot;
+  weight = -100
 </code></pre>
 
-<h3 id="記事を書いてみる">記事を書いてみる</h3>
+<p><br></p>
 
-<p>次のコードを実行すると、post以下にtest.mdというMarkdownが作成されます。</p>
+<h1 id="index-mdの作成">_index.mdの作成</h1>
 
-<pre><code>hugo new post/test.md
+<p>ホームのページにあいさつや紹介などを書いてみます。<br />
+次のコードを実行しましょう。</p>
+
+<pre><code>hugo new _index.md
 </code></pre>
 
-<p>試しに以下のコードをtest.mdに書き込みましょう。</p>
+<p>これで/content/_index.mdが作成されました。</p>
+
+<p>では、このコードを書き込みましょう。</p>
 
 <pre><code>---
-title: testテスト
-draft: false
-slug: testテスト
-date: '2018-04-15'
+title: home
 ---
+&lt;div style=&quot;text-align: center;&quot;&gt;
+&lt;font size=&quot;6&quot;&gt;&lt;b&gt;Welcome To Our Homepage!&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;
+&lt;/div&gt;
 
-Hello World!!
+# こんにちは！
 </code></pre>
+
+<p>ちなみにMarkdownはMarkdown書式だけでなく、
+<strong>HTMLのコードを埋め込む</strong>
+こともできます。<br />
+上のコードでは文字のサイズ変更と中央揃えを行なっています。</p>
+
+<h1 id="index-htmlの編集">index.htmlの編集</h1>
+
+<p>/layout/index.htmlがホームのページのHTMLファイルなので、これを編集します。</p>
+
+<pre><code>〜中略〜
+    &lt;!-- Main Content --&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+    &lt;!-- これを追加！！ --&gt;
+    &lt;article&gt;
+    {{ .Content }}
+    &lt;/article&gt;
+    &lt;!-- ここまで --&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1&quot;&gt;
+          {{ $posts := or .Site.Params.PostSummariesFrontPage 4 }}
+          {{ range first $posts (where .Data.Pages &quot;Type&quot; &quot;post&quot;) }}
+
+〜中略〜
+</code></pre>
+
+<pre><code>&lt;article&gt;
+{{ .Content }}
+&lt;/article&gt;
+</code></pre>
+
+<p>このコードを追加することで、Hugoが_index.mdを読み込んで表示するようになります。</p>
+
+<h1 id="tips">Tips</h1>
+
+<p>index.htmlはトップページを司っているので、ここを変更することで色々変えることができます。</p>
+
+<p>例えば、{{ .Site.Title }}を『物理部』に書き換えると、サイトの題名を『物理部』に変更できます。<br />
+ナビゲーションバーの題名と違うものにしたい時にとても便利です。</p>
+
+<p>あとは『Older Posts』を『過去の投稿』とすれば、日本語ページらしくなります。</p>
+
+<h1 id="運命の時">運命の時、、、</h1>
 
 <p>保存できたら、testディレクトリの中で</p>
 
 <pre><code>hugo server --disableFastRender
 </code></pre>
 
-<p>を実行し、ブラウザで <a href="http://localhost:1313/">http://localhost:1313/</a> にアクセス！</p>
+<p>を実行し、ブラウザで <a href="http://localhost:1313/">http://localhost:1313/</a> にアクセス！<br />
+エラー吐いたりうまく表示されない場合は、どこかの工程でミスをしている可能性が高いです。<br />
+僕はこの方法で大丈夫だったので、あなたもうまくいったはず、、、
+<img src="https://koyogakuin.github.io/butsuri/img/0423/1.png" alt="Drawing" style="width: 100%"/></p>
 
-<p><img src="https://koyogakuin.github.io/butsuri/img/0421/2.png" alt="Drawing" style="width: 100%"/></p>
-
-<p>このようなサイトが表示されたら、大成功！<br />
-あとは自分仕様にパラメータを変更していけば、サイトの完成です。</p>
+<p>このように表示されたら大成功です。</p>
 
 <h1 id="まとめ">まとめ</h1>
 
-<p>どうでしょうか。うまく表示されましたか？<br />
-基本コマンドライン操作でなかなかとっつきにくいですが、慣れてしまえば便利なんだなーこれが。<br />
-皆さんもぜひ、Hugoを使って見て下さい。</p>
+<p>config.tomlの編集である程度の設定はできるのですが、細かい設定は直接HTMLソースをいじったほうが手っ取り早いと思います。<br />
+目的のページのHTMLソースを変更すれば、自由に作り変えることができるわけです。
+それについては後々紹介したいと思います。</p>
 
 <h1 id="make-it-possible">Make IT Possible!!</h1>
 

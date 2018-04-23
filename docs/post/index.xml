@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Code released under the Apache 2.0 license.</copyright>
-    <lastBuildDate>Sat, 21 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugoでサイト開発入門　第2回</title>
+      <link>https://koyogakuin.github.io/butsuri/post/hugo2/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/post/hugo2/</guid>
+      <description>どーも。物理部部長のH﨑です。 さてさて、HugoでWeb開発の第二回です。 今回はサイトを自分好みに変更する方法を紹介したいと思います。 con</description>
+    </item>
     
     <item>
       <title>Hugoでサイト開発入門　第1回</title>
@@ -19,15 +28,6 @@
       
       <guid>https://koyogakuin.github.io/butsuri/post/hugo1/</guid>
       <description>どーも。物理部部長のH﨑です。 記念すべき第一回。何を投稿しようか迷ったのですが、後輩が今後もこのサイトを運営できるように（しろよ絶対）という</description>
-    </item>
-    
-    <item>
-      <title>ホームページ鋭意開発中</title>
-      <link>https://koyogakuin.github.io/butsuri/post/%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%8B%AD%E6%84%8F%E9%96%8B%E7%99%BA%E4%B8%AD/</link>
-      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/post/%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%8B%AD%E6%84%8F%E9%96%8B%E7%99%BA%E4%B8%AD/</guid>
-      <description>ホームページ鋭意開発中！</description>
     </item>
     
   </channel>
