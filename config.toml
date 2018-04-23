@@ -42,7 +42,7 @@ hasCJKLanguage = "true"
   weight = -300
 
 [[menu.main]]
-  name = "部誌のバックナンバー"
+  name = "バックナンバー"
   url = "/page/バックナンバー/"
   weight = -200
 
