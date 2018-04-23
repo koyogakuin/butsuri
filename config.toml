@@ -5,7 +5,8 @@ paginate = 10
 languageCode = "ja-jp"
 copyright = "Code released under the Apache 2.0 license."
 googleAnalytics = "UA-117865841-1" # delete or comment to disable Google Analytics JS generation
-disqusShortname = "" #delete or comment to disable Disqus comments
+disqusShortname = "jia-yang-xue-yuan-wu-li-bu" #delete or comment to disable Disqus comments
+hasCJKLanguage = "true"
 
 [author]
   name = "T.H."

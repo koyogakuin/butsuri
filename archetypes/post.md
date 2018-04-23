@@ -1,17 +1,13 @@
-+++
-tags = [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-categories = [
-    "Development",
-    "golang",
-]
-image = "/img/about-bg.jpg" #optional image - "/img/about-bg.jpg" is the default
-description = ""
-draft = true
-comments = true
-+++
+---
+title:
+slug:
+date: '2018-04-15'
+keywords: "甲陽,学院,高等学校,高校,物理"
+tags:
+    - ""
+categories:
+    - ""
+image: "/img/emc.jpeg"
+draft: false
+comments: true
+---
