@@ -2,22 +2,33 @@
 title: home
 permalink: /404.html
 ---
-
 <!--
 [<img src="https://github.com/goodroot/hugo-classic/raw/master/images/partywizard.gif" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/goodroot/hugo-classic)
 -->
 <div style="text-align: center;">
-<font size="6"><b>Welcome To Our Homepage!<br><br></b></font>
-</div>
+このサイトを重いとか、  
 
-## 物理部入ろう！！
-#  このサイト見た甲陽生は全員入部な
-あまりにも仮入部来ないから、サイト作りましたw  
-まさに行動力の化身。  
-入部する人がいないと、このサイトを引き継ぐ人がいなくなってしまうんですが、、、せっかく作ったのに
+ツール使ってるからダメとか、  
+
+テンプレ通りで面白くないとか。
+<br><br>
+### 無知は罪なり、知は空虚なり、英知を持つもの英雄なり
+
+何も知らずに批判をする、そんな人間のままでいいのか。  
+
+答えは物理部にある。
+
+# Beyond The Border(笑)
 <br>
-### 甲陽の変人たちよ、その才能を帰宅部で埋もれさせるのはもったいない！
-### 物理部でその才能を爆発させようではないか！！
+<hr/>
+
+### Q：サイトが重いです。  
+この程度のサイトで重くなるスマホが**out of date**
+
+### Q：ツール使ってるんでしょ？  
+そうしないと、後輩が管理できなくなる。  
+他人が書いたプログラムほど読みにくいものはない。
+</div>
 <hr/>
 
 ## 更新情報
