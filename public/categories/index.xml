@@ -6,10 +6,20 @@
     <description>Recent content in Categories on 甲陽学院 高等学校 物理部(新)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Code released under the Apache 2.0 license.</copyright>
+    <copyright>Copyright © 2018 Koyo Physics. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3dプリンタ</title>
+      <link>https://koyogakuin.github.io/butsuri/categories/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/categories/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Web</title>

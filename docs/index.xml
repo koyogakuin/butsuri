@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>home on 甲陽学院 高等学校 物理部(新)</title>
+    <title>ホーム on 甲陽学院 高等学校 物理部(新)</title>
     <link>https://koyogakuin.github.io/butsuri/</link>
-    <description>Recent content in home on 甲陽学院 高等学校 物理部(新)</description>
+    <description>Recent content in ホーム on 甲陽学院 高等学校 物理部(新)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Code released under the Apache 2.0 license.</copyright>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <copyright>Copyright © 2018 Koyo Physics. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自作3Dプリンタ1</title>
+      <link>https://koyogakuin.github.io/butsuri/post/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF1/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/post/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF1/</guid>
+      <description>物理部部長のH﨑です。 中3の時に3Dプリンタを自作したのですが、記録等を全く残していなかったので、改めて紹介します。 かれこれ２年前の話なので</description>
+    </item>
     
     <item>
       <title>Hugoでサイト開発入門　第2回</title>
@@ -31,21 +40,21 @@
     </item>
     
     <item>
-      <title>その他</title>
-      <link>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</link>
+      <title>クラブ紹介</title>
+      <link>https://koyogakuin.github.io/butsuri/page/%E3%82%AF%E3%83%A9%E3%83%96%E7%B4%B9%E4%BB%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</guid>
-      <description>・物理部入部希望の方へ(随時募集中です！)</description>
+      <guid>https://koyogakuin.github.io/butsuri/page/%E3%82%AF%E3%83%A9%E3%83%96%E7%B4%B9%E4%BB%8B/</guid>
+      <description>部員 ●101回生 &#39;30年度部長 H﨑 このホームページの共同制作者。C言語、iPhoneアプリ開発、電子工作、Arduino、人工知能、自作PC</description>
     </item>
     
     <item>
-      <title>部員紹介</title>
-      <link>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</link>
+      <title>作品ギャラリー</title>
+      <link>https://koyogakuin.github.io/butsuri/page/%E4%BD%9C%E5%93%81%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</guid>
-      <description>●101回生 &#39;30年度部長 H﨑 このホームページの共同制作者。C言語、iPhoneアプリ開発、電子工作、Arduino、人工知能、自作PC、そ</description>
+      <guid>https://koyogakuin.github.io/butsuri/page/%E4%BD%9C%E5%93%81%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC/</guid>
+      <description>物理部員が必死で作った作品たち。 全く活動してなさそうなふりをして、 ちゃんと活動してます。 2018年 ・3Dプリンタ</description>
     </item>
     
     <item>

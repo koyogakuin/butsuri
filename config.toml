@@ -3,7 +3,7 @@ title = "甲陽学院 高等学校 物理部(新)"
 canonifyurls = true
 paginate = 10
 languageCode = "ja-jp"
-copyright = "Code released under the Apache 2.0 license."
+copyright = "Copyright © 2018 Koyo Physics. All Rights Reserved."
 googleAnalytics = "UA-117865841-1" # delete or comment to disable Google Analytics JS generation
 disqusShortname = "jia-yang-xue-yuan-wu-li-bu" #delete or comment to disable Disqus comments
 hasCJKLanguage = "true"
@@ -37,8 +37,8 @@ hasCJKLanguage = "true"
   weight = -400
 
 [[menu.main]]
-  name = "部員紹介"
-  url = "/page/部員紹介/"
+  name = "クラブ紹介"
+  url = "/page/クラブ紹介/"
   weight = -300
 
 [[menu.main]]
@@ -47,6 +47,6 @@ hasCJKLanguage = "true"
   weight = -200
 
 [[menu.main]]
-  name = "その他"
-  url = "/page/その他/"
+  name = "作品ギャラリー"
+  url = "/page/作品ギャラリー/"
   weight = -100

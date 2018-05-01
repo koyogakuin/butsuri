@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://koyogakuin.github.io/butsuri/post/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF1/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://koyogakuin.github.io/butsuri/post/hugo2/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
@@ -13,7 +18,20 @@
   </url>
   
   <url>
+    <loc>https://koyogakuin.github.io/butsuri/categories/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://koyogakuin.github.io/butsuri/tags/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://koyogakuin.github.io/butsuri/categories/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -30,13 +48,13 @@
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/post/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://koyogakuin.github.io/butsuri/tags/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,16 +65,16 @@
   </url>
   
   <url>
+    <loc>https://koyogakuin.github.io/butsuri/page/%E3%82%AF%E3%83%A9%E3%83%96%E7%B4%B9%E4%BB%8B/</loc>
+  </url>
+  
+  <url>
     <loc>https://koyogakuin.github.io/butsuri/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://koyogakuin.github.io/butsuri/page/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
-  </url>
-  
-  <url>
-    <loc>https://koyogakuin.github.io/butsuri/page/%E9%83%A8%E5%93%A1%E7%B4%B9%E4%BB%8B/</loc>
+    <loc>https://koyogakuin.github.io/butsuri/page/%E4%BD%9C%E5%93%81%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC/</loc>
   </url>
   
   <url>
