@@ -25,6 +25,9 @@ hasCJKLanguage = "true"
 [[params.social]]
   title = "github"
   url = "https://github.com/koyogakuin/"
+[[params.social]]
+  title = "youtube"
+  url = "https://www.youtube.com/channel/UCoM7hhjA0OisVtQv2ZwlEfw"
 
 [[menu.main]]
   name = "ホーム"
