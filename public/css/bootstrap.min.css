@@ -6998,6 +6998,7 @@ button.close {
 
 #pageTop i {
   padding-top: 6px
+  right: 20px
 }
 
 #pageTop a {
@@ -7012,6 +7013,7 @@ button.close {
   font-weight: bold;
   text-decoration: none;
   text-align: center
+  right: 20px
 }
 
 #pageTop a:hover {
