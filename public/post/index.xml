@@ -7,27 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2018 Koyo Physics. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>自作ドローン</title>
+      <title>自作ドローン製作記</title>
       <link>https://koyogakuin.github.io/butsuri/post/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://koyogakuin.github.io/butsuri/post/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3/</guid>
-      <description>物理部部長のH﨑です。 高1の音展でドローンを自作したのですが、これまた記録等を全く残していなかったので、改めて紹介します。 またセキュリティ・</description>
+      <description>物理部部長のH﨑です。 高1の音展でドローンを自作したのですが、これまた記録等を全く残していなかったので、改めて紹介します。 また、セキュリティ</description>
     </item>
     
     <item>
-      <title>自作3Dプリンタ</title>
+      <title>自作3Dプリンタ製作記</title>
       <link>https://koyogakuin.github.io/butsuri/post/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://koyogakuin.github.io/butsuri/post/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</guid>
-      <description>物理部部長のH﨑です。 中3の時に3Dプリンタを自作したのですが、記録等を全く残していなかったので、改めて紹介します。 実はセキュリティ・キャン</description>
+      <description>きっかけ 夏の終わりの風物詩である読書感想文。僕はいつもiPadでいろいろ下書きを書いてからそれをノートに写すというスタイルで書いていたのです</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://koyogakuin.github.io/butsuri/post/hugo2/</guid>
-      <description>どーも。物理部部長のH﨑です。 さてさて、HugoでWeb開発の第二回です。 今回はサイトを自分好みに変更する方法を紹介したいと思います。 con</description>
+      <description>どーも。物理部部長のH﨑です。 前回の続きで、Hugoで作ったサイトを自分仕様に変えていく方法を紹介します。 config.tomlの編集 前回、</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://koyogakuin.github.io/butsuri/post/hugo1/</guid>
-      <description>どーも。物理部部長のH﨑です。 記念すべき第一回。何を投稿しようか迷ったのですが、後輩が今後もこのサイトを運営できるように（しろよ絶対）という</description>
+      <description>どーも。物理部部長のH﨑です。 僕自身Web開発は初めてでしたが、Hugoを使って簡単にカッコいいサイトが作れました！ HugoとGitHub P</description>
     </item>
     
   </channel>

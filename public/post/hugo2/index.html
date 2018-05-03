@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="HugoでWeb開発の第二回。今回はサイトを自分好みに変更する方法を紹介します。">
     <meta name="author" content="H﨑">
     <meta name="keywords" content="">
 
@@ -84,14 +84,15 @@
 
     
     
-    <header class="intro-header" style="background-image: url('https://koyogakuin.github.io/butsuri///img/emc.jpeg')">
+    <header class="intro-header" style="background-image: url('https://koyogakuin.github.io/butsuri///img/emc.png')">
       
       <div class="container">
         <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
              <div class="post-heading">
                <h1>Hugoでサイト開発入門　第2回</h1>
-               <h2 class="subheading"></h2>
+               <br>
+               <h2 class="subheading">HugoでWeb開発の第二回。今回はサイトを自分好みに変更する方法を紹介します。</h2>
                <span class="meta">
                  
 投稿者：  H﨑　更新日  2018年4月23日
@@ -117,10 +118,9 @@
                   
 
 <p>どーも。物理部部長のH﨑です。<br />
-さてさて、HugoでWeb開発の第二回です。
-今回はサイトを自分好みに変更する方法を紹介したいと思います。</p>
+前回の続きで、Hugoで作ったサイトを自分仕様に変えていく方法を紹介します。</p>
 
-<h1 id="config-tomlの編集">config.tomlの編集</h1>
+<h2 id="config-tomlの編集">config.tomlの編集</h2>
 
 <p><a href="https://koyogakuin.github.io/butsuri/post/hugo1/">前回</a>、何気にコピペして使用したconfig.tomlですが、ちゃんと意味があります。<br />
 これを編集すれば、一気に自分のサイトっぽくなります。</p>
@@ -176,7 +176,7 @@ disqusShortname = &quot;&quot; #DisqusのID(コメント欄)
 
 <p><br></p>
 
-<h1 id="index-mdの作成">_index.mdの作成</h1>
+<h2 id="index-mdの作成">_index.mdの作成</h2>
 
 <p>ホームのページにあいさつや紹介などを書いてみます。<br />
 次のコードを実行しましょう。</p>
@@ -203,7 +203,7 @@ title: home
 こともできます。<br />
 上のコードでは文字のサイズ変更と中央揃えを行なっています。</p>
 
-<h1 id="index-htmlの編集">index.htmlの編集</h1>
+<h2 id="index-htmlの編集">index.htmlの編集</h2>
 
 <p>/layout/index.htmlがホームのページのHTMLファイルなので、これを編集します。</p>
 
@@ -232,7 +232,7 @@ title: home
 
 <p>このコードを追加することで、Hugoが_index.mdを読み込んで表示するようになります。</p>
 
-<h1 id="tips">Tips</h1>
+<h2 id="tips">Tips</h2>
 
 <p>index.htmlはトップページを司っているので、ここを変更することで色々変えることができます。</p>
 
@@ -241,7 +241,7 @@ title: home
 
 <p>あとは『Older Posts』を『過去の投稿』とすれば、日本語ページらしくなります。</p>
 
-<h1 id="運命の時">運命の時、、、</h1>
+<h2 id="運命の時">運命の時、、、</h2>
 
 <p>保存できたら、testディレクトリの中で</p>
 
@@ -255,7 +255,7 @@ title: home
 
 <p>このように表示されたら大成功です。</p>
 
-<h1 id="まとめ">まとめ</h1>
+<h2 id="まとめ">まとめ</h2>
 
 <p>config.tomlの編集である程度の設定はできるのですが、細かい設定は直接HTMLソースをいじったほうが手っ取り早いと思います。<br />
 目的のページのHTMLソースを変更すれば、自由に作り変えることができるわけです。

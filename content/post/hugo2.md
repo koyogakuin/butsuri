@@ -6,17 +6,17 @@ tags:
     - "Hugo"
 categories:
     - "Web"
-image: "/img/emc.jpeg"
+image: "/img/emc.png"
+description: "HugoでWeb開発の第二回。今回はサイトを自分好みに変更する方法を紹介します。"
 author: H﨑
 draft: false
 comments: true
 ---
 
 どーも。物理部部長のH﨑です。  
-さてさて、HugoでWeb開発の第二回です。
-今回はサイトを自分好みに変更する方法を紹介したいと思います。
+前回の続きで、Hugoで作ったサイトを自分仕様に変えていく方法を紹介します。
 
-# config.tomlの編集
+## config.tomlの編集
 [前回](https://koyogakuin.github.io/butsuri/post/hugo1/)、何気にコピペして使用したconfig.tomlですが、ちゃんと意味があります。  
 これを編集すれば、一気に自分のサイトっぽくなります。
 
@@ -70,7 +70,7 @@ disqusShortname = "" #DisqusのID(コメント欄)
   weight = -100
 ```
 <br>
-# _index.mdの作成
+## _index.mdの作成
 ホームのページにあいさつや紹介などを書いてみます。  
 次のコードを実行しましょう。
 ```
@@ -94,7 +94,7 @@ title: home
 こともできます。  
 上のコードでは文字のサイズ変更と中央揃えを行なっています。
 
-# index.htmlの編集
+## index.htmlの編集
 /layout/index.htmlがホームのページのHTMLファイルなので、これを編集します。
 
 ```
@@ -122,7 +122,7 @@ title: home
 ```
 このコードを追加することで、Hugoが_index.mdを読み込んで表示するようになります。
 
-# Tips
+## Tips
 index.htmlはトップページを司っているので、ここを変更することで色々変えることができます。  
 
 例えば、{{ .Site.Title }}を『物理部』に書き換えると、サイトの題名を『物理部』に変更できます。  
@@ -130,7 +130,7 @@ index.htmlはトップページを司っているので、ここを変更する�
 
 あとは『Older Posts』を『過去の投稿』とすれば、日本語ページらしくなります。
 
-# 運命の時、、、
+## 運命の時、、、
 
 保存できたら、testディレクトリの中で
 ```
@@ -143,7 +143,7 @@ hugo server --disableFastRender
 
 このように表示されたら大成功です。
 
-# まとめ
+## まとめ
 config.tomlの編集である程度の設定はできるのですが、細かい設定は直接HTMLソースをいじったほうが手っ取り早いと思います。  
 目的のページのHTMLソースを変更すれば、自由に作り変えることができるわけです。
 それについては後々紹介したいと思います。

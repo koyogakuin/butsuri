@@ -7,19 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2018 Koyo Physics. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://koyogakuin.github.io/butsuri/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>3dプリンタ</title>
-      <link>https://koyogakuin.github.io/butsuri/categories/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://koyogakuin.github.io/butsuri/categories/3d%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Web</title>
@@ -31,11 +21,11 @@
     </item>
     
     <item>
-      <title>ドローン</title>
-      <link>https://koyogakuin.github.io/butsuri/categories/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      <title>作ってみた</title>
+      <link>https://koyogakuin.github.io/butsuri/categories/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://koyogakuin.github.io/butsuri/categories/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3/</guid>
+      <guid>https://koyogakuin.github.io/butsuri/categories/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
       <description></description>
     </item>
     
