@@ -6993,7 +6993,7 @@ button.close {
 #pageTop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 20px
 }
 
 #pageTop i {
@@ -7011,11 +7011,11 @@ button.close {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
+  text-align: center
 }
 
 #pageTop a:hover {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.7
 }
 /*# sourceMappingURL=bootstrap.min.css.map */

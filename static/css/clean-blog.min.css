@@ -434,10 +434,11 @@ body {
 .youtube iframe {
   width: 100%;
 }
+
 #pageTop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 20px
 }
 
 #pageTop i {
@@ -455,10 +456,10 @@ body {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
+  text-align: center
 }
 
 #pageTop a:hover {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.7
 }
