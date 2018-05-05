@@ -17,7 +17,13 @@ p {
 }
 
 p a {
-  text-decoration: underline
+  text-decoration: underline;
+  color: #1c1ca5
+}
+
+
+p a:hover {
+  color: #ff0000
 }
 
 h1, h3, h4, h5, h6 {
@@ -252,6 +258,8 @@ hr.small {
   font-style: italic;
   margin-top: 0
 }
+
+
 
 .post-preview>.post-meta>a {
   text-decoration: none;
