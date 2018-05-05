@@ -10,7 +10,7 @@ categories:
 image: "/img/3DP/1.png"
 description: "ライフゲームってご存知ですか？まるで生きているかのような振る舞いをする、とても興味深いプログラムです。"
 author: 濱﨑 拓
-draft: false
+draft: true
 comments: true
 ---
 
