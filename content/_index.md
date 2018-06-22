@@ -6,17 +6,8 @@ permalink: /404.html
 [<img src="https://github.com/goodroot/hugo-classic/raw/master/images/partywizard.gif" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/goodroot/hugo-classic)
 -->
 <div style="text-align: center;">
-このサイトを重いとか  
 
-ツール使ってるからダメとか  
-
-テンプレ通りで面白くないとか
-
-<font size="6">知るかそんなもん</font><br>
-
-何も知らずに批判をする、そんな人間のままでいいのか。  
-
-答えは物理部にある。
+<font size="6">物理部って、知ってる？</font><br>
 
 </div>
 <hr/>
