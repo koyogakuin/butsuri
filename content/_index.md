@@ -7,7 +7,8 @@ permalink: /404.html
 -->
 <div style="text-align: center;">
 
-<font size="6">物理部って、知ってる？</font><br>
+<font size="8">物理部って</font><br><br>
+<font size="8">知ってるぅ？</font><br>
 
 </div>
 <hr/>
