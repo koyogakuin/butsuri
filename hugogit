@@ -1,7 +1,7 @@
 #!/bin/sh
 hugo
 cp -r /Users/Mactaku/Documents/物理部ホームページ/butsuri/public/ /Users/Mactaku/Documents/物理部ホームページ/butsuri/docs/
-cp /Users/Mactaku/Documents/物理部ホームページ/butsuri/public/ /Users/Mactaku/Documents/物理部ホームページ/butsuri/google19dccd7c0b69f534.html
+cp /Users/Mactaku/Documents/物理部ホームページ/butsuri/google19dccd7c0b69f534.html /Users/Mactaku/Documents/物理部ホームページ/butsuri/public/google19dccd7c0b69f534.html
 git add .
 git commit -m "change some parts"
 git push origin master
