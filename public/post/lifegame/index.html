@@ -86,7 +86,7 @@
 
     
     
-    <header class="intro-header" style="background-image: url('https://koyogakuin.github.io/butsuri///img/3DP/1.png')">
+    <header class="intro-header" style="background-image: url('https://koyogakuin.github.io/butsuri///img/lifegame/1.png')">
       
       <div class="container">
         <div class="row">
@@ -97,7 +97,7 @@
                <h2 class="subheading">ライフゲームってご存知ですか？まるで生きているかのような振る舞いをする、とても興味深いプログラムです。</h2>
                <span class="meta">
                  
-投稿者：  濱﨑 拓　更新日  2018年5月3日
+投稿者：  H崎　更新日  2018年5月3日
 <br /><br />
 カテゴリ : <a href="https://koyogakuin.github.io/butsuri/categories/%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F">作ってみた</a>
 
@@ -121,7 +121,7 @@
 
 <h2 id="きっかけ">きっかけ</h2>
 
-<p>いつものように、物理部で数学の勉強してたのですが(ｵｲ)、そこにいた部員の一人が「ライフゲームって知ってる？」と発言したことが発端です。<br />
+<p>いつものように、物理部で数学の勉強してたのですが(ｵｲ)、そこにいた準部員の一人が「ライフゲームって知ってる？」と発言したことが発端です。<br />
 僕自身、全く知らなかったので、即興でProcessingでコードを書くことに。<br />
 残念ながら謎のバグのせいで、その日の物理部では完成しませんでしたが、家に帰って完成させたので紹介します。</p>
 
@@ -145,7 +145,7 @@
 (Wikipedia引用)</p>
 </blockquote>
 
-<p>こんだけです。
+<p>これだけです。
 一つずつのセルに対して、８近傍の状態を調べて次の世代を決定するというプログラムを組めば良いわけです。</p>
 
 <h2 id="ソースコード">ソースコード</h2>
@@ -159,12 +159,14 @@ int s_count = 0;
 
 int weflag = 0; //0-normal 1-write 2-erace
 
+
 boolean[][] flag;
 boolean[][] flag_new;
 
 ControlP5 cp5;
 Textlabel label;
 Button Button1, Button2, Button3;
+
 
 int[][] charac = new int[][]{
   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -219,7 +221,6 @@ void setup() {
 
   strokeWeight(0);
   frameRate(50);
-  //reset();
 }
 
 
@@ -255,6 +256,8 @@ void draw() {
       }
     }
   }
+
+
   display();
 }
 
@@ -355,6 +358,10 @@ void erace() {
 }
 </code></pre>
 
+<p>注意としては、ControlP5というライブラリを使用しているので、
+スケッチ＞ライブラリをインポート＞ライブラリを追加
+から、インストールしてください。</p>
+
 <p>ライフゲーム単体だけであれば、もっと短くて済みますが、他の機能として、</p>
 
 <ul>
@@ -365,7 +372,7 @@ void erace() {
 
 <p>を追加。ちょっと長くなってしまいました。（頑張ればもうちょっと短くなると思いますが）</p>
 
-<p>仕組みとしてはとても単純なのですが、</p>
+<p>このプログラムは全てのマスに対して８近傍の数を調べる総当たり方式ですが、他にもビットボードと呼ばれるビット演算で次の世代を決定するという方式もあるようなので、余裕があれば挑戦してみたいと思います。</p>
 
                   
    <div id="disqus_thread"></div>
@@ -426,6 +433,15 @@ void erace() {
                     </li>
                     
                     <li>
+                      <a href="https://twitter.com/koyobutsuri">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
                       <a href="https://www.youtube.com/channel/UCoM7hhjA0OisVtQv2ZwlEfw">
                         <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
@@ -454,13 +470,16 @@ void erace() {
 
     
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-117865841-1', 'auto');
-ga('send', 'pageview');
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-117865841-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 
