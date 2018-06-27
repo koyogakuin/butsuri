@@ -11,4 +11,5 @@ description: ""
 image: "/img/emc.jpeg"
 draft: false
 comments: true
+math: false
 ---
