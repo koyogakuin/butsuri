@@ -13,7 +13,4 @@ permalink: /404.html
 </div>
 <hr/>
 
-
-<hr/>
-
 <h2><p><a href="/post/">活動記録</a></p></h2>
