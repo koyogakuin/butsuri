@@ -1,16 +1,16 @@
 ---
 title: 二重振り子のシミュレーション　第一回
 slug: 二重振り子１
-date: '2018-06-27'
+date: '2018-06-28'
 tags:
     - "力学"
     - "二重振り子"
 categories:
     - "作ってみた"
-image: "/img/3DP/1.png"
+image: "/img/pendu/2.jpg"
 description: "ゴリゴリの力学です"
 author: H﨑
-draft: true
+draft: false
 comments: true
 math: true
 ---
@@ -33,23 +33,75 @@ math: true
 <img src="/img/pendu/1.jpg" alt="Drawing" style="width: 50%"/>
 
 二つのおもりで構成される二重振り子について考えてみたいと思います。  
-おもり1は質量$m_1$で紐の長さは$l_1$で角度を$\theta_1$、  
-おもり2は質量$m_2$で紐の長さは$l_2$で角度を$\theta_2$とします。  
+
+おもり1は質量$m_1$で紐の長さは$l_1$で角度を$\theta_1$、座標を$(x,y)$  
+おもり2は質量$m_2$で紐の長さは$l_2$で角度を$\theta_2$、座標を$(X,Y)$とします。  
 そうすると
 
+$$x = l_1\sin\theta_1　,　y = -l_1\cos\theta_1$$
+$$X = l_1\sin\theta_1+l_2\sin\theta_2　,　Y = -l_1\cos\theta_1-l_2\cos\theta_2$$
 
+各座標の速度は時間tで微分して  
 
-$$\frac{\partial^2 p}{\partial t^2} = c^2 \nabla^2 p$$
+$$\dot{x} = l_1\dot{\theta_1}\cos\theta_1　,　\dot{y} = l_1\dot{\theta_1}\sin\theta_1$$
+$$\dot{X} = l_1\dot{\theta_1}\cos\theta_1+l_2\dot{\theta_2}\sin\theta_2　,　\dot{Y} = l_1\dot{\theta_1}\sin\theta_1+l_2\dot{\theta_2}\sin\theta_2$$
 
+おもり１の速度を$v$、おもり２の速度を$V$とすると  
 
+$$v^2 = \dot{x}^2+\dot{y}^2 = l_1^2\dot{\theta_1}^2$$
+\begin{align}
+V^2 &= \dot{X}^2+\dot{Y}^2\\\\\\
+&= (l_1\dot{\theta_1}\cos\theta_1+l_2\dot{\theta_2\cos\theta_2})^2+(l_1\dot{\theta_1}\sin\theta_1+l_2\dot{\theta_2\sin\theta_2})^2\\\\\\
+&=l_1^2\dot{\theta_1}^2+l_2^2\dot{\theta_2}^2+2l_1l_2\dot{\theta_1}\dot{\theta_2}(\cos\theta_1\cos\theta_2+\sin\theta_1\sin\theta_2)\\\\\\
+&=l_1^2\dot{\theta_1}^2+l_2^2\dot{\theta_2}^2+2l_1l_2\dot{\theta_1}\dot{\theta_2}cos(\theta_1-\theta_2)
+\end{align}
 
-
-
-次回のエントリでは $T = S((1 + \frac{E}{R})^{F} - 1)$ について書こうと思います。
+よって運動エネルギーは
 
 \begin{align}
-\ddot{x}_1&#038;=r_1\sin{\theta_1}\\\\\\
-y_1&#038;=-r_1\cos{\theta_1} \\\\\\
-x_2&#038;=r_1\sin{\theta_1}+r_2\sin{\theta_2}\\\\\\
-y_2&#038;=-r_1\cos{\theta_1}-r_2\cos{\theta_2}\\\\\\
+T &= \frac{1}{2}m_1v^2+\frac{1}{2}m_2V^2\\\\\\
+&=\frac{1}{2}(m_1+m_2)l_1^2\dot(\theta_1)^2+\frac{1}{2}m_2l_2^2\dot{\theta_2}^2+m_2l_1l_2\dot{\theta_1}\dot{\theta_2}cos(\theta_1-\theta_2)
 \end{align}
+
+位置エネルギーは
+
+\begin{align}
+U &= m_1gl_1(1-\cos\theta_1)+m_2g\Bigl(l_1(1-\cos\theta_1)+l_2(1-\cos\theta_2)\Bigr)\\\\\\
+&= (m_1+m_2)gl_1(1-cos\theta_1)+m_2gl_2(1-cos\theta_2)
+\end{align}
+
+ラグランジアンは
+
+\begin{align}
+L &= \frac{1}{2}(m_1+m_2)l_1^2\dot{\theta_1}^2+\frac{1}{2}m_2l_2^2\dot{\theta_2}^2+m_2l_1l_2\dot{\theta_1}\dot{\theta_2}cos(\theta_1-\theta_2)\\\\\\
+&-(m_1+m_2)gl_1(1-\cos\theta_1)-m_2gl_2(1-\cos\theta_2)
+\end{align}
+
+簡便のため$m_1=m_2=m$、$l_1=l_2=l$という場合を考えると
+
+\begin{align}
+L &= ml^2\dot{\theta_1}^2+\frac{m}{2}l^2\dot{\theta_2}+ml^2\dot{\theta_2}\dot{\theta_2}\cos(\theta_1-\theta_2)\\\\\\
+&-2mgl(1-cos\theta_1)-mgl(2\cos\theta_1+\cos\theta_2-3)\\\\\\
+&= ml^2\Bigl(\dot{\theta_1}^2+\frac{1}{2}\dot{\theta_2}^2+\dot{\theta_1}\dot{\theta_2}cos(\theta_1-\theta_2)\Bigr)\\\\\\
+&+mgl(2\cos\theta_1+\cos\theta_2-3)
+\end{align}
+
+保存力場中でのラグランジュ運動方程式は
+
+$$\frac{d}{dt}(\frac{\partial L }{\partial \dot{\theta_1}})-\frac{\partial L }{\partial \theta_1} = 0$$
+$$\frac{d}{dt}(\frac{\partial L }{\partial \dot{\theta_2}})-\frac{\partial L }{\partial \theta_2} = 0$$
+
+それぞれの項を計算すると
+
+$$\frac{d}{dt}\Bigl(\frac{\partial L }{\partial \dot{\theta_1}}\Bigl)= 2ml^2\ddot{\theta_1}+ml^2\Bigl(\ddot{\theta_2}\cos(\theta_1-\theta_2)-\dot{\theta_2}(\dot{\theta_1}-\dot{\theta_2})sin(\theta_1-\theta_2)\Bigl)$$
+$$\frac{\partial L }{\partial \theta_1} = -ml^2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1-\theta_2)-2mgl\sin\theta_1$$
+$$\frac{d}{dt}\Bigl(\frac{\partial L }{\partial \dot{\theta_2}}\Bigl)= ml^2\ddot{\theta_2}+ml^2\Bigl(\ddot{\theta_1}\cos(\theta_1-\theta_2)-\dot{\theta_1}(\dot{\theta_1}-\dot{\theta_2})sin(\theta_1-\theta_2)\Bigl)$$
+$$\frac{\partial L }{\partial \theta_2} = ml^2\dot{\theta_2}\dot{\theta_2}\sin(\theta_1-\theta_2)-mgl\sin\theta_2$$
+
+$\ddot{\theta_1}$、$\ddot{\theta_2}$について整理すると
+
+$$\ddot{\theta_1} = \frac{1}{2}\Bigl(-\ddot{\theta_2}\cos(\theta_1-\theta_2)-\dot{\theta_2}^2\sin(\theta_1-\theta_2)-2\frac{g}{l}\sin\theta_1\Bigl)$$
+$$\ddot{\theta_2} = -\ddot{\theta_1}\cos(\theta_1-\theta_2)+\dot{\theta_1}^2\sin(\theta_1-\theta_2)-\frac{g}{l}\sin\theta_2$$
+
+## まとめ
+$\ddot{\theta_1}$、$\ddot{\theta_2}$に関しての常微分方程式までは導出できたので、次回はルンゲ・クッタ法を用いて数値計算してみたいと思います。
