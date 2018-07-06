@@ -16,6 +16,7 @@ math: true
 ---
 
 ## 二重振り子とは？？
+
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">物理部らしいことしてみた<br><br>二重振り子はカオス現象ですが、運動方程式をラグランジアンに変換して、Runge–Kutta法で微分方程式の近似解出したらシミュレーションできます(言ってみたかった) <a href="https://t.co/fuN8Pdsiui">pic.twitter.com/fuN8Pdsiui</a></p>&mdash; 甲陽学院高等学校 物理部 (@koyobutsuri) <a href="https://twitter.com/koyobutsuri/status/1011218367280107520?ref_src=twsrc%5Etfw">2018年6月25日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 こんなやつです。
