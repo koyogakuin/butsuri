@@ -15,6 +15,7 @@ permalink: /404.html
 <img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
 <img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
 <img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
 </div>
 <br>
 <hr/>
