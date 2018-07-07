@@ -39,6 +39,40 @@
     
     
 
+    <style>
+     
+    .korokoro {
+      -webkit-animation: korokoro 2.5s linear 0s 1;
+      animation: korokoro 2.5s linear 0s 1;
+      animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes korokoro {
+      0%   { -webkit-transform: translate(0%, 0%); }
+      5%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+      25%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
+      30%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
+      35%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
+      45%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+      50%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
+      60%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
+      65%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
+      75%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
+      100% { -webkit-transform: translate(0%, 0%) rotate(0deg); }
+    }
+    @keyframes korokoro {
+      0%   { transform: translate(0%, 0%); }
+      5%   { transform: translate(10%, 0%) rotate(10deg); }
+      25%  { transform: translate(20%, 0%) rotate(20deg); }
+      30%  { transform: translate(-10%, 0%) rotate(-10deg); }
+      35%  { transform: translate(-15%, 0%) rotate(-15deg); }
+      45%  { transform: translate(10%, 0%) rotate(10deg); }
+      50%  { transform: translate(15%, 0%) rotate(15deg); }
+      60%  { transform: translate(-5%, 0%) rotate(-5deg); }
+      65%  { transform: translate(-7%, 0%) rotate(-7deg); }
+      75%  { transform: translate(0%, 0%) rotate(0deg); }
+      100% { transform: translate(0%, 0%) rotate(0deg); }
+    }
+  </style>
 </head>
 
 <body>
@@ -114,12 +148,18 @@
 [<img src="https://github.com/goodroot/hugo-classic/raw/master/images/partywizard.gif" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/goodroot/hugo-classic)
 -->
 
-<p><div style="text-align: center;"></p>
-
-<p><font size="8">物理部って</font><br><br>
-<font size="8">知ってるぅ？</font><br><br></p>
-
-<p></div>
+<p><div style="text-align: center;">
+<!--
+<font size="8">物理部って</font><br><br>
+<font size="8">知ってるぅ？</font><br><br>
+-->
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+<img id="mitarashi" class="korokoro" src="img/n1.png" width="200" height="600">
+</div>
+<br>
 <hr/></p>
 
 <h2><font size="4" color="red">期末考査中止(してほちぃ)</font></h2>
