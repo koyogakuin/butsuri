@@ -16,5 +16,6 @@ permalink: /404.html
 <hr/>
 
 
-<h2><font size="4" color="red">期末考査中止(してほちぃ)</font></h2>
+
+
 <h2><p><a href="/post/">活動記録</a></p></h2>
