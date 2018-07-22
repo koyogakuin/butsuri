@@ -69,12 +69,10 @@
                 ms = ms.toString();
 
 
-                local.countDiv.innerHTML = '<font size="9"><div id="dlt-blogparts-count-day">' + d.toString() +'日</div>'
-                  + '<div id="dlt-blogparts-count-time">'
-                  + h.toString() +':'
-                  + ('00' + m.toString()).substr(m.toString().length, 2) +':'
-                  + ('00' + s).substr(s.length, 2) +'</div>'
-                  + '<div id="dlt-blogparts-count-ms">.' + ('0' + ms).substr(ms.length, 1) +' s</div></div>';
+                local.countDiv.innerHTML = '<font size="8">' + d.toString() +'日<br>'
+                  + h.toString() +'時間'
+                  + ('00' + m.toString()).substr(m.toString().length, 2) +'分<br>'
+                  + ('00' + s).substr(s.length, 2) +'.'+ ('0' + ms).substr(ms.length, 1)+'秒<br>';
             }, 100);
         }
     }
@@ -84,12 +82,12 @@
 
         document.write('<div class="dlt-blogparts-main">'
         + '<div style="text-align: center;">'
-        + '<font size="6">2020年度センター試験まで</font><br><br>'
+        + '<strong><font size="6">2020年度センター試験まで</font></strong><br>'
         + '<div id="dlt-blogparts-count-136381"></div>'
         + '</div>');
 
 
-    var Dlt = new DLTTimer("dlt-blogparts-count-136381", 2020, 0, 11, 00, 00, 00, 'down');
+    var Dlt = new DLTTimer("dlt-blogparts-count-136381", 2020, 0, 11, 09, 30, 00, 'down');
     Dlt.run();
 
 })();
