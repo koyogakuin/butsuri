@@ -8,7 +8,12 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/butsuri/post/%E4%BA%8C%E9%87%8D%E6%8C%AF%E3%82%8A%E5%AD%90%EF%BC%91/</loc>
+    <loc>http://localhost:1313/butsuri/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/butsuri/post/double-pendu/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -112,11 +117,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/butsuri/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/butsuri/tags/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0/</loc>
     <lastmod>2018-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -142,10 +142,6 @@
     <loc>http://localhost:1313/butsuri/tags/%E5%8A%9B%E5%AD%A6/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/butsuri/page/%E3%83%90%E3%83%83%E3%82%AF%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC/</loc>
   </url>
   
 </urlset>

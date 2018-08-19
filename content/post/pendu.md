@@ -1,6 +1,6 @@
 ---
-title: 二重振り子のシミュレーション　第一回
-slug: 二重振り子１
+title: 二重振り子のシミュレーション
+slug: double-pendu
 date: '2018-06-28'
 tags:
     - "力学"

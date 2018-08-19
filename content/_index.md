@@ -7,18 +7,10 @@ permalink: /404.html
 -->
 <script type="text/javascript" src="/js/count.js" charset="utf-8"></script>
 <div style="text-align: center;">
-<!--
-<font size="8">物理部って</font><br><br>
-<font size="8">知ってるぅ？</font><br><br>
--->
 <p id="count">
 </p>
-
 </div>
 <br>
 <hr/>
-
-
-
 
 <h2><p><a href="/post/">活動記録</a></p></h2>

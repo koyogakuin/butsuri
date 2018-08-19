@@ -48,11 +48,6 @@ hasCJKLanguage = "true"
   weight = -300
 
 [[menu.main]]
-  name = "バックナンバー"
-  url = "/page/バックナンバー/"
-  weight = -200
-
-[[menu.main]]
   name = "作品ギャラリー"
   url = "/page/作品ギャラリー/"
   weight = -100
