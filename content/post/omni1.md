@@ -1,5 +1,5 @@
 ---
-title: "オムニホイール全方向車 第1回"
+title: "オムニホイールで全方向移動"
 slug: omni1
 date: '2018-05-03'
 tags:
@@ -7,9 +7,13 @@ tags:
     - "Blynk"
 categories:
     - "作ってみた"
-image: "/img/3DP/1.png"
-description: "2017年度の音展でも出してたんですけど、諸事情あって１から制作することになりました。"
+image: "/img/omni/4.jpg"
+description: "2017年度の音展でも展示していましたが、諸事情あって１から制作することになりました。"
 author: 濱﨑 拓
-draft: true
+draft: false
 comments: true
 ---
+
+### オムニホイールとは？
+
+<img src="/img/omni/1.jpg" alt="Drawing" style="width: 100%"/>
