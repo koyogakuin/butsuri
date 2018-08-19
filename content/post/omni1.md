@@ -10,7 +10,7 @@ categories:
 image: "/img/omni/4.jpg"
 description: "2017年度の音展でも展示していましたが、諸事情あって１から制作することになりました。"
 author: 濱﨑 拓
-draft: false
+draft: true
 comments: true
 ---
 
