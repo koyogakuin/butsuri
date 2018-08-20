@@ -3,4 +3,4 @@
 {{ end }}
 投稿者：  {{ .Params.author }}　更新日  {{ dateFormat (.Site.Params.DateForm | default "Mon, Jan 2, 2006") .Date }}
 <br />
-{{ partial "categories.html" .}}   {{ partial "tags.html" .}}
+{{ partial "tags.html" .}}
