@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/butsuri/</loc>
-    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/butsuri/post/double-pendu/</loc>
     <lastmod>2018-06-28T00:00:00+00:00</lastmod>
   </url>
@@ -114,6 +109,11 @@
     <loc>http://localhost:1313/butsuri/tags/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3/</loc>
     <lastmod>2018-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/butsuri/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>

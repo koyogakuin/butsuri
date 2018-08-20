@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>二重振り子のシミュレーション　第一回</title>
-      <link>http://localhost:1313/butsuri/post/%E4%BA%8C%E9%87%8D%E6%8C%AF%E3%82%8A%E5%AD%90%EF%BC%91/</link>
+      <title>二重振り子のシミュレーション</title>
+      <link>http://localhost:1313/butsuri/post/double-pendu/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/butsuri/post/%E4%BA%8C%E9%87%8D%E6%8C%AF%E3%82%8A%E5%AD%90%EF%BC%91/</guid>
+      <guid>http://localhost:1313/butsuri/post/double-pendu/</guid>
       <description>二重振り子とは？？ 物理部らしいことしてみた 二重振り子はカオス現象ですが、運動方程式をラグランジアンに変換して、Runge–Kutta法で微分</description>
     </item>
     
