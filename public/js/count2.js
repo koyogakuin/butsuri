@@ -1,5 +1,6 @@
 (function()
 {
+
     var DLTTimer = function(countDivId, year, month, day, hour, minute, second, type)
     {
         this.countDiv = document.getElementById(countDivId);
@@ -69,7 +70,7 @@
                 ms = ms.toString();
 
 
-                local.countDiv.innerHTML = '<strong><font size="6">音楽と展覧の会まで</font><br><font size="7">' + d.toString() +'日 '+ h.toString() +'時間</font></strong>';
+                local.countDiv.innerHTML = '<strong><font size="6">音楽と展覧の会まで</font><br><font size="7">' + d.toString() +' days '+ h.toString() +' h</font></strong>';
             }, 100);
         }
     }

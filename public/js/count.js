@@ -69,10 +69,8 @@
                 ms = ms.toString();
 
 
-                local.countDiv.innerHTML = '<font size="6">' + d.toString() +'日<br>'
-                  + h.toString() +'時間'
-                  + ('00' + m.toString()).substr(m.toString().length, 2) +'分<br>'
-                  + ('00' + s).substr(s.length, 2) +'.'+ ('0' + ms).substr(ms.length, 1)+'秒<br>';
+                local.countDiv.innerHTML = '<font size="6">' + d.toString() +'日<br>';
+                  <!-- + h.toString() +'時間'+ ('00' + m.toString()).substr(m.toString().length, 2) +'分<br>'+ ('00' + s).substr(s.length, 2) +'.'+ ('0' + ms).substr(ms.length, 1)+'秒<br>' -->
             }, 100);
         }
     }
@@ -81,7 +79,7 @@
     var url  = "http://deadlinetimer.com/timer/136381";
 
         document.write('<div style="text-align: center;">'
-        + '<font size="4">ちなみに2020年度センター試験まで</font><br>'
+        + '<font size="4">ちなみに2020年度センター試験まで</font>'
         + '<div id="dlt-blogparts-count-136381"></div>'
         + '</div>');
 
