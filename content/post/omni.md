@@ -1,7 +1,7 @@
 ---
 title: "オムニホイールで全方向移動"
 slug: omni
-date: '2018-08-19'
+date: '2018-08-22'
 tags:
     - "オムニホイール"
     - "Blynk"
@@ -14,6 +14,10 @@ author: H﨑
 draft: false
 comments: true
 ---
+
+## はじめに
+物理部部長のH崎です。  
+この記事では今年製作したオムニホイールについて紹介したいと思います。  
 
 ## オムニホイールとは？
 
@@ -73,7 +77,125 @@ A4988とBLEモジュールを接続したところ(旧バージョン)
 これは大きいのではないでしょうか。多分赤ちゃんでも操作できます(今時の子供はスマホリテラシーが高い)  
 具体的にはBlynkというアプリを用いて、BLE経由でコマンドをオムニホイール車に送信しています。
 
-ソースコードは、じきに公開します。
+### ソースコード
+```
+#include <TimerOne.h>
+#include <BlynkSimpleSerialBLE.h>
+
+#define BLYNK_USE_DIRECT_CONNECT
+#define STEP1 12
+#define STEP2 10
+#define STEP3 7
+#define STEP4 5
+#define DIR1 11
+#define DIR2 9
+#define DIR3 6
+#define DIR4 4
+
+int counter, c, p0, p1, p2, p3;
+char auth[] = "enter your passcode";
+
+BLYNK_WRITE(V0){
+  p0 = param.asInt();
+}
+
+BLYNK_WRITE(V1){
+  p1 = param.asInt();
+}
+
+BLYNK_WRITE(V2){
+  p2 = param.asInt();
+}
+
+BLYNK_WRITE(V3){
+  p3 = param.asInt();
+}
+
+void setup() {
+  pinMode(STEP1, OUTPUT);
+  pinMode(DIR1, OUTPUT);
+  pinMode(STEP2, OUTPUT);
+  pinMode(DIR2, OUTPUT);
+  pinMode(STEP3, OUTPUT);
+  pinMode(DIR3, OUTPUT);
+  pinMode(STEP4, OUTPUT);
+  pinMode(DIR4, OUTPUT);
+
+  digitalWrite(DIR1, LOW);
+  digitalWrite(DIR2, LOW);
+  digitalWrite(DIR3, LOW);
+  digitalWrite(DIR4, LOW);
+
+  Timer1.initialize(150); //マイクロ秒単位で設定
+  Timer1.attachInterrupt(timer1);
+
+  Serial.begin(115200);
+  Blynk.begin(Serial, auth);
+}
+
+void loop() {
+  Blynk.run();
+  if (p0 < 0) {
+    digitalWrite(DIR2, LOW);
+    digitalWrite(DIR3, HIGH);
+  } else {
+    digitalWrite(DIR2, HIGH);
+    digitalWrite(DIR3, LOW);
+  }
+  if (p1 < 0) {
+    digitalWrite(DIR1, HIGH);
+    digitalWrite(DIR4, LOW);
+  } else {
+    digitalWrite(DIR1, LOW);
+    digitalWrite(DIR4, HIGH);
+  }
+  if (p2 == 1) {
+    digitalWrite(DIR1, HIGH);
+    digitalWrite(DIR2, HIGH);
+    digitalWrite(DIR3, HIGH);
+    digitalWrite(DIR4, HIGH);
+  } else if (p3 == 1) {
+    digitalWrite(DIR1, LOW);
+    digitalWrite(DIR2, LOW);
+    digitalWrite(DIR3, LOW);
+    digitalWrite(DIR4, LOW);
+  }
+}
+
+void timer1() {
+  int s = abs(p0);
+  int j = abs(p1);
+  if (p0 != 0 && c < s) {
+    digitalWrite(STEP2, HIGH);
+    digitalWrite(STEP3, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP2, LOW);
+    digitalWrite(STEP3, LOW);
+  }
+  if (p1 != 0 && c < j) {
+    digitalWrite(STEP1, HIGH);
+    digitalWrite(STEP4, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP1, LOW);
+    digitalWrite(STEP4, LOW);
+  }
+  if (p2 == 1 || p3 == 1) {
+    digitalWrite(STEP1, HIGH);
+    digitalWrite(STEP2, HIGH);
+    digitalWrite(STEP3, HIGH);
+    digitalWrite(STEP4, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP1, LOW);
+    digitalWrite(STEP2, LOW);
+    digitalWrite(STEP3, LOW);
+    digitalWrite(STEP4, LOW);
+  }
+  c++;
+  if (c == 10) {
+    c = 0;
+  }
+}
+```
 
 ## 完成！
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">オムニホイールで全方向移動車作ったから、その動画<br>iPadとはBluetoothで接続してます。またホームページにまとめるかも <a href="https://t.co/UwGVQnTvvv">pic.twitter.com/UwGVQnTvvv</a></p>&mdash; 甲陽學院髙等學挍 物理部 (@koyobutsuri) <a href="https://twitter.com/koyobutsuri/status/1018021585960120320?ref_src=twsrc%5Etfw">2018年7月14日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

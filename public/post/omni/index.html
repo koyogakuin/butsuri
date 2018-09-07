@@ -129,7 +129,7 @@
                <h2 class="subheading">2017年度の音展でも展示していましたが、諸事情あって1 から制作することになりました。</h2>
                <span class="meta">
                  
-投稿者：  H﨑　更新日  2018年8月19日
+投稿者：  H﨑　更新日  2018年8月22日
 <br />
 タグ : <a href="https://koyogakuin.github.io/butsuri/tags/%E3%82%AA%E3%83%A0%E3%83%8B%E3%83%9B%E3%82%A4%E3%83%BC%E3%83%AB">オムニホイール</a>, <a href="https://koyogakuin.github.io/butsuri/tags/blynk">blynk</a>
 
@@ -147,6 +147,11 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>物理部部長のH崎です。<br />
+この記事では今年製作したオムニホイールについて紹介したいと思います。</p>
 
 <h2 id="オムニホイールとは">オムニホイールとは？</h2>
 
@@ -213,7 +218,125 @@ A4988とBLEモジュールを接続したところ(旧バージョン)</p>
 <p>これは大きいのではないでしょうか。多分赤ちゃんでも操作できます(今時の子供はスマホリテラシーが高い)<br />
 具体的にはBlynkというアプリを用いて、BLE経由でコマンドをオムニホイール車に送信しています。</p>
 
-<p>ソースコードは、じきに公開します。</p>
+<h3 id="ソースコード">ソースコード</h3>
+
+<pre><code>#include &lt;TimerOne.h&gt;
+#include &lt;BlynkSimpleSerialBLE.h&gt;
+
+#define BLYNK_USE_DIRECT_CONNECT
+#define STEP1 12
+#define STEP2 10
+#define STEP3 7
+#define STEP4 5
+#define DIR1 11
+#define DIR2 9
+#define DIR3 6
+#define DIR4 4
+
+int counter, c, p0, p1, p2, p3;
+char auth[] = &quot;enter your passcode&quot;;
+
+BLYNK_WRITE(V0){
+  p0 = param.asInt();
+}
+
+BLYNK_WRITE(V1){
+  p1 = param.asInt();
+}
+
+BLYNK_WRITE(V2){
+  p2 = param.asInt();
+}
+
+BLYNK_WRITE(V3){
+  p3 = param.asInt();
+}
+
+void setup() {
+  pinMode(STEP1, OUTPUT);
+  pinMode(DIR1, OUTPUT);
+  pinMode(STEP2, OUTPUT);
+  pinMode(DIR2, OUTPUT);
+  pinMode(STEP3, OUTPUT);
+  pinMode(DIR3, OUTPUT);
+  pinMode(STEP4, OUTPUT);
+  pinMode(DIR4, OUTPUT);
+
+  digitalWrite(DIR1, LOW);
+  digitalWrite(DIR2, LOW);
+  digitalWrite(DIR3, LOW);
+  digitalWrite(DIR4, LOW);
+
+  Timer1.initialize(150); //マイクロ秒単位で設定
+  Timer1.attachInterrupt(timer1);
+
+  Serial.begin(115200);
+  Blynk.begin(Serial, auth);
+}
+
+void loop() {
+  Blynk.run();
+  if (p0 &lt; 0) {
+    digitalWrite(DIR2, LOW);
+    digitalWrite(DIR3, HIGH);
+  } else {
+    digitalWrite(DIR2, HIGH);
+    digitalWrite(DIR3, LOW);
+  }
+  if (p1 &lt; 0) {
+    digitalWrite(DIR1, HIGH);
+    digitalWrite(DIR4, LOW);
+  } else {
+    digitalWrite(DIR1, LOW);
+    digitalWrite(DIR4, HIGH);
+  }
+  if (p2 == 1) {
+    digitalWrite(DIR1, HIGH);
+    digitalWrite(DIR2, HIGH);
+    digitalWrite(DIR3, HIGH);
+    digitalWrite(DIR4, HIGH);
+  } else if (p3 == 1) {
+    digitalWrite(DIR1, LOW);
+    digitalWrite(DIR2, LOW);
+    digitalWrite(DIR3, LOW);
+    digitalWrite(DIR4, LOW);
+  }
+}
+
+void timer1() {
+  int s = abs(p0);
+  int j = abs(p1);
+  if (p0 != 0 &amp;&amp; c &lt; s) {
+    digitalWrite(STEP2, HIGH);
+    digitalWrite(STEP3, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP2, LOW);
+    digitalWrite(STEP3, LOW);
+  }
+  if (p1 != 0 &amp;&amp; c &lt; j) {
+    digitalWrite(STEP1, HIGH);
+    digitalWrite(STEP4, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP1, LOW);
+    digitalWrite(STEP4, LOW);
+  }
+  if (p2 == 1 || p3 == 1) {
+    digitalWrite(STEP1, HIGH);
+    digitalWrite(STEP2, HIGH);
+    digitalWrite(STEP3, HIGH);
+    digitalWrite(STEP4, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(STEP1, LOW);
+    digitalWrite(STEP2, LOW);
+    digitalWrite(STEP3, LOW);
+    digitalWrite(STEP4, LOW);
+  }
+  c++;
+  if (c == 10) {
+    c = 0;
+  }
+}
+</code></pre>
 
 <h2 id="完成">完成！</h2>
 

@@ -41,7 +41,7 @@
                 var to = new Date();
                 //var to = new Date(2010, 4, 18, 15, 0, 0);
                 if (local.type == 'down' && to.getTime() > local.from.getTime()) {
-                    local.stop('...約束の時間は過ぎました');
+                    local.stop('いざ勝負じゃ！！');
                     return 0;
                 }
                 else if (local.type == 'up' && to.getTime() < local.from.getTime()){
@@ -69,7 +69,7 @@
                 ms = ms.toString();
 
 
-                local.countDiv.innerHTML = '<font size="8">' + d.toString() +'日<br>'
+                local.countDiv.innerHTML = '<font size="6">' + d.toString() +'日<br>'
                   + h.toString() +'時間'
                   + ('00' + m.toString()).substr(m.toString().length, 2) +'分<br>'
                   + ('00' + s).substr(s.length, 2) +'.'+ ('0' + ms).substr(ms.length, 1)+'秒<br>';
@@ -80,9 +80,8 @@
     var name = "平成32年度センター試験（2020年1月11・12日）";
     var url  = "http://deadlinetimer.com/timer/136381";
 
-        document.write('<div class="dlt-blogparts-main">'
-        + '<div style="text-align: center;">'
-        + '<strong><font size="6">2020年度センター試験まで</font></strong><br>'
+        document.write('<div style="text-align: center;">'
+        + '<font size="4">ちなみに2020年度センター試験まで</font><br>'
         + '<div id="dlt-blogparts-count-136381"></div>'
         + '</div>');
 
