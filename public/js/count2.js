@@ -69,7 +69,7 @@
                 ms = ms.toString();
 
 
-                local.countDiv.innerHTML = '<strong><font size="8">音楽と展覧の会まで<br>あと ' + d.toString() +' 日</font></strong>';
+                local.countDiv.innerHTML = '<strong><font size="6">音楽と展覧の会まで</font><br><font size="7">あと ' + d.toString() +' 日</font></strong>';
             }, 100);
         }
     }
