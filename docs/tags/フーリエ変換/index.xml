@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>フーリエ変換 on 甲陽学院 高等学校 物理部(新)</title>
+    <link>https://koyogakuin.github.io/butsuri/tags/%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E5%A4%89%E6%8F%9B/</link>
+    <description>Recent content in フーリエ変換 on 甲陽学院 高等学校 物理部(新)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright © 2018 Koyo Physics. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://koyogakuin.github.io/butsuri/tags/%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E5%A4%89%E6%8F%9B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>フーリエ変換でお絵かきしてみよう〜導入編〜</title>
+      <link>https://koyogakuin.github.io/butsuri/post/fourier1/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://koyogakuin.github.io/butsuri/post/fourier1/</guid>
+      <description>はじめに 波 というと、皆さんは何を思い浮かべるでしょうか。海岸に打ち寄せる波や、湖面に石を投げてできる波紋とかでしょうか。これらは目に見える波</description>
+    </item>
+    
+  </channel>
+</rss>
