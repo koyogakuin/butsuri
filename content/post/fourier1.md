@@ -7,7 +7,7 @@ tags:
     - "フーリエ変換"
 categories:
     - "作ってみた"
-image: "/img/pendu/2.jpg"
+image: "/img/fourier/8.jpg"
 description: "現代のあらゆる技術を支えているフーリエ変換について、できる限りわかりやすく解説します。"
 author: H﨑
 draft: false
