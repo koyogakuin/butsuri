@@ -14,7 +14,9 @@ draft: false
 comments: true
 math: true
 ---
-<img src="/img/fourier/8.jpg" alt="Drawing" style="width: 100%"/>
+
+<img src="/img/fourier/8.jpg" alt="Drawing" style="width: 100%"/>  
+
 ## はじめに
 
 　**波** というと、皆さんは何を思い浮かべるでしょうか。海岸に打ち寄せる波や、湖面に石を投げてできる波紋とかでしょうか。これらは目に見える波で、山と谷が周期的に繰り返されているのがよくわかります。しかし、波には目に見えないものもたくさん存在します。  
