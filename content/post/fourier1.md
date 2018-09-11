@@ -32,7 +32,7 @@ math: true
 
 1800年頃にフーリエという数学者が驚くべき内容の論文を発表しました。
 
-<img src="/img/fourier/fourier.png" alt="Drawing" style="width: 70%"/>
+<img src="/img/fourier/fourier.png" alt="Drawing" style="width: 100%"/>
 
 いきなりsinとかcosとかなんやねん！ってなった方を放って話を進めるわけにはいきませんので、一応説明しておきます。  
 
