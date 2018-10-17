@@ -147,213 +147,7 @@
 
 <h2 id="ソースコード">ソースコード</h2>
 
-<pre><code>import controlP5.*;
-
-int gw, gh;
-int block = 7;
-int delayTime = 1;
-int s_count = 0;
-
-int weflag = 0; //0-normal 1-write 2-erace
-
-
-boolean[][] flag;
-boolean[][] flag_new;
-
-ControlP5 cp5;
-Textlabel label;
-Button Button1, Button2, Button3;
-
-
-int[][] charac = new int[][]{
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
-  {0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
-
-void setup() {
-  background(0, 0, 0);
-  size(displayWidth, displayHeight);
-  gw = displayWidth/block;
-  gh = displayHeight/block;
-  flag = new boolean[gw][gh];
-  flag_new = new boolean[gw][gh];
-
-  PFont pfont = createFont(&quot;Arial&quot;, 20, true); // use true/false for smooth/no-smooth
-  ControlFont font = new ControlFont(pfont, 20);
-  cp5 = new ControlP5(this);
-  Button1 = cp5.addButton(&quot;init&quot;)
-    .setLabel(&quot;初期化&quot;)//テキスト
-    .setPosition(displayWidth-200, 40)
-    .setSize(95, 40)
-    .setFont(font);
-  Button2 = cp5.addButton(&quot;erace&quot;)
-    .setLabel(&quot;消去&quot;)//テキスト
-    .setPosition(displayWidth-300, 40)
-    .setSize(95, 40)
-    .setFont(font);
-  Button3 = cp5.addButton(&quot;write&quot;)
-    .setLabel(&quot;書込&quot;)//テキスト
-    .setPosition(displayWidth-400, 40)
-    .setSize(95, 40)
-    .setFont(font);
-
-  label = cp5.addTextlabel(&quot;label&quot;);
-  label.setText(&quot;&quot;);
-  label.setPosition(displayWidth-325, 10);
-  label.setColorValue(0xffffffff);
-  label.setFont(createFont(&quot;Arial&quot;, 20, true));
-
-  cp5.addSlider(&quot;delayTime&quot;)
-    //.setLabel(&quot;bbb&quot;)
-    .setRange(0, 1000)
-    .setValue(0)//初期値
-    .setPosition(displayWidth-400, 90)//位置
-    .setSize(295, 20);//大きさ
-
-  strokeWeight(0);
-  frameRate(50);
-}
-
-
-void draw() {
-  if (weflag != 0 &amp;&amp; mousePressed == true) {
-    int X = mouseX/block;
-    int Y = mouseY/block;
-    if (X &gt;= 0 &amp;&amp; Y &gt;= 0  &amp;&amp; X &lt; gw &amp;&amp; Y &lt; gh) {
-      if (weflag == 1) {
-        flag_new[X][Y] = true;
-      } else {
-        flag_new[X][Y] = false;
-      }
-      display();
-    }
-  }else if ((millis()-s_count) &gt; delayTime &amp;&amp; weflag == 0) {
-    s_count = millis();
-    for (int i=1; i &lt; gw-1; i++) {
-      for (int j=1; j &lt; gh-1; j++) {
-        if (flag[i][j] == false) {
-          if (count(i, j) == 3) {
-            flag_new[i][j] = true;
-          } else {
-            flag_new[i][j] = false;
-          }
-        } else {
-          if (count(i, j) &lt;= 1 || count(i, j) &gt;= 4) {
-            flag_new[i][j] = false;
-          } else {
-            flag_new[i][j] = true;
-          }
-        }
-      }
-    }
-  }
-
-
-  display();
-}
-
-void display() {//更新を表示
-  for (int i=0; i &lt; gw; i++) {
-    for (int j=0; j&lt; gh; j++) {
-      if (flag[i][j] == true &amp;&amp; flag_new[i][j] == false) {
-        fill(0, 0, 0);
-        rect(block*i, block*j, block, block);
-        flag[i][j] = flag_new[i][j];
-      } else if (flag[i][j] == false &amp;&amp; flag_new[i][j] == true) {
-        fill(int(random(50, 255)), 255, 0);
-        rect(block*i, block*j, block, block);
-        flag[i][j] = flag_new[i][j];
-      }
-    }
-  }
-}
-
-void reset() {//設定を初期化
-  for (int i=0; i &lt; gw; i++) {
-    for (int j=0; j&lt; gh; j++) {
-      flag[i][j] = true;
-      flag_new[i][j] = false;
-    }
-  }
-  for (int j=0; j&lt;9; j++) {
-    for (int i=0; i&lt;37; i++) {
-      if (charac[j][i] == 1) {
-        flag_new[i+20][j+5] = true;
-      }
-    }
-  }
-  for (int j=0; j&lt;9; j++) {
-    for (int i=0; i&lt;37; i++) {
-      if (charac[j][i] == 1) {
-        flag_new[i+20][j+30] = true;
-      }
-    }
-  }
-  for (int j=0; j&lt;9; j++) {
-    for (int i=0; i&lt;37; i++) {
-      if (charac[j][i] == 1) {
-        flag_new[i+20][j+55] = true;
-      }
-    }
-  }
-  display();
-}
-
-int count(int x, int y) {//周辺をカウント
-  int count = 0;
-  for (int a=0; a &lt; 3; a++) {
-    for (int b=0; b &lt; 3; b++) {
-      if (flag[x+a-1][y+b-1] == true) {
-        count++;
-      }
-    }
-  }
-  if (flag[x][y] == true) {
-    count--;
-  }
-  return count;
-}
-
-void init() {
-  rect(displayWidth-325, 10, 100, 40);
-  label.setText(&quot;&quot;);
-  weflag = 0;
-  reset();
-}
-
-void write() {
-  if (weflag == 1) {
-    fill(0, 0, 0);
-    rect(displayWidth-325, 10, 110, 40);
-    label.setText(&quot;&quot;);
-    weflag = 0;
-  } else {
-    fill(0, 0, 0);
-    rect(displayWidth-325, 10, 110, 40);
-    label.setText(&quot;書込モード&quot;);
-    weflag = 1;
-  }
-}
-void erace() {
-  if (weflag == 2) {
-    fill(0, 0, 0);
-    rect(displayWidth-325, 10, 110, 40);
-    label.setText(&quot;&quot;);
-    weflag = 0;
-  } else {
-    fill(0, 0, 0);
-    rect(displayWidth-325, 10, 110, 40);
-    label.setText(&quot;消去モード&quot;);
-    weflag = 2;
-  }
-}
-</code></pre>
+<script src="https://gist.github.com/hamataku/76b7a566c9f2287ef79b731d0d618970.js"></script>
 
 <p>注意としては、ControlP5というライブラリを使用しているので、
 スケッチ＞ライブラリをインポート＞ライブラリを追加
@@ -373,7 +167,7 @@ void erace() {
 
                   
    <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -453,7 +247,7 @@ void erace() {
     <script src="https://koyogakuin.github.io/butsuri//js/clean-blog.js"></script>
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

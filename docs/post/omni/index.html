@@ -188,123 +188,7 @@ A4988とBLEモジュールを接続したところ(旧バージョン)</p>
 
 <h3 id="ソースコード">ソースコード</h3>
 
-<pre><code>#include &lt;TimerOne.h&gt;
-#include &lt;BlynkSimpleSerialBLE.h&gt;
-
-#define BLYNK_USE_DIRECT_CONNECT
-#define STEP1 12
-#define STEP2 10
-#define STEP3 7
-#define STEP4 5
-#define DIR1 11
-#define DIR2 9
-#define DIR3 6
-#define DIR4 4
-
-int counter, c, p0, p1, p2, p3;
-char auth[] = &quot;enter your passcode&quot;;
-
-BLYNK_WRITE(V0){
-  p0 = param.asInt();
-}
-
-BLYNK_WRITE(V1){
-  p1 = param.asInt();
-}
-
-BLYNK_WRITE(V2){
-  p2 = param.asInt();
-}
-
-BLYNK_WRITE(V3){
-  p3 = param.asInt();
-}
-
-void setup() {
-  pinMode(STEP1, OUTPUT);
-  pinMode(DIR1, OUTPUT);
-  pinMode(STEP2, OUTPUT);
-  pinMode(DIR2, OUTPUT);
-  pinMode(STEP3, OUTPUT);
-  pinMode(DIR3, OUTPUT);
-  pinMode(STEP4, OUTPUT);
-  pinMode(DIR4, OUTPUT);
-
-  digitalWrite(DIR1, LOW);
-  digitalWrite(DIR2, LOW);
-  digitalWrite(DIR3, LOW);
-  digitalWrite(DIR4, LOW);
-
-  Timer1.initialize(150); //マイクロ秒単位で設定
-  Timer1.attachInterrupt(timer1);
-
-  Serial.begin(115200);
-  Blynk.begin(Serial, auth);
-}
-
-void loop() {
-  Blynk.run();
-  if (p0 &lt; 0) {
-    digitalWrite(DIR2, LOW);
-    digitalWrite(DIR3, HIGH);
-  } else {
-    digitalWrite(DIR2, HIGH);
-    digitalWrite(DIR3, LOW);
-  }
-  if (p1 &lt; 0) {
-    digitalWrite(DIR1, HIGH);
-    digitalWrite(DIR4, LOW);
-  } else {
-    digitalWrite(DIR1, LOW);
-    digitalWrite(DIR4, HIGH);
-  }
-  if (p2 == 1) {
-    digitalWrite(DIR1, HIGH);
-    digitalWrite(DIR2, HIGH);
-    digitalWrite(DIR3, HIGH);
-    digitalWrite(DIR4, HIGH);
-  } else if (p3 == 1) {
-    digitalWrite(DIR1, LOW);
-    digitalWrite(DIR2, LOW);
-    digitalWrite(DIR3, LOW);
-    digitalWrite(DIR4, LOW);
-  }
-}
-
-void timer1() {
-  int s = abs(p0);
-  int j = abs(p1);
-  if (p0 != 0 &amp;&amp; c &lt; s) {
-    digitalWrite(STEP2, HIGH);
-    digitalWrite(STEP3, HIGH);
-    delayMicroseconds(15);
-    digitalWrite(STEP2, LOW);
-    digitalWrite(STEP3, LOW);
-  }
-  if (p1 != 0 &amp;&amp; c &lt; j) {
-    digitalWrite(STEP1, HIGH);
-    digitalWrite(STEP4, HIGH);
-    delayMicroseconds(15);
-    digitalWrite(STEP1, LOW);
-    digitalWrite(STEP4, LOW);
-  }
-  if (p2 == 1 || p3 == 1) {
-    digitalWrite(STEP1, HIGH);
-    digitalWrite(STEP2, HIGH);
-    digitalWrite(STEP3, HIGH);
-    digitalWrite(STEP4, HIGH);
-    delayMicroseconds(15);
-    digitalWrite(STEP1, LOW);
-    digitalWrite(STEP2, LOW);
-    digitalWrite(STEP3, LOW);
-    digitalWrite(STEP4, LOW);
-  }
-  c++;
-  if (c == 10) {
-    c = 0;
-  }
-}
-</code></pre>
+<script src="https://gist.github.com/hamataku/e2399f709114d706139fa725ae153357.js"></script>
 
 <h2 id="完成">完成！</h2>
 
@@ -318,7 +202,7 @@ void timer1() {
 
                   
    <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -398,7 +282,7 @@ void timer1() {
     <script src="https://koyogakuin.github.io/butsuri//js/clean-blog.js"></script>
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
